@@ -1,0 +1,1305 @@
+/*START hela webbplatsen*/
+
+* {
+   box-sizing: border-box;
+}
+
+/*Specificerar generellt hur brett jag vill att innehållet i body ska vara, spec. en bakgrundsbild samt hur den ska se ut och bete sig. Spec. bakgrundsfärg, typsnittsfamilj och textfärg, samt max/min storlekar på text.*/
+
+body {
+	width: 80%;
+	max-width:800px;
+	margin: 25px auto;
+	background-image: url("top3.svg");
+	height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:center bottom;
+	background-color: #d7d7ff;
+	color: #000000;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: min(max(16px, 4vw), 20px);
+}
+
+/*Specificerar typsnitt, storlekar och färger för dessa rubriknivåer.*/
+h1 {
+
+	font-family: "Young Serif", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4vw;
+	white-space: wrap;
+	color: #fff;
+}
+
+h2 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.2em;
+	color: #fff;
+	margin: auto;
+	padding-right: 10px;
+	text-align: left;
+}
+
+h3 {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1em;
+	color: #000;
+	margin: auto;
+	padding-right: 10px;
+	text-align: left;
+}
+
+/*Tar bort punkterna i punktlistorna.*/
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*Hjälpmeny*/
+/*Spec. hur den ska se ut och fungera på olika sätt. T.ex. hur länkarnas utseende förändras när en för muspekaren över dem. */
+.topmenu {
+	display: flex;
+	width: 50%;
+	max-width: 800px;
+	float: right;
+	margin: auto;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	white-space: nowrap;
+	font-size: 0.9em;
+}
+.topmenu li {
+	flex: 1;
+	padding: 10px;
+	list-style-type: none;
+	text-align: right;
+}
+.topmenu a {
+	text-decoration-line: underline;
+	padding: 10px 10px;
+	color: #fff;
+}
+.topmenu a:hover {	
+   color: #ffbd59;
+   text-decoration-line: none;
+}
+
+/*spec. att hjälpmenyn ska döljas när sidbredden understiger 800px.*/
+@media screen and (max-width: 800px) {
+	.topmenu {
+	display: none;	
+	}
+}
+
+/*START Huvudmeny*/
+	/*Specificerar hur logotypen ska visas och bete sig i menyns formatering.*/
+#logo {
+	width: 100%;
+	height: auto;
+	max-width: 150px;
+	min-width: 100px;
+	margin: auto;
+	vertical-align: middle;
+}
+	/*Specificerar hur menyn som helhet ska se ut och bete sig vid förändrad fönsterstorlek ned till 800px. Specificerar bl.a. menyrubrikerna inte ska lägga sig på två rader samt font-storlekens minsta och största storlek.*/
+.mainmenu {
+	display: flex;
+	float: left;
+	width: 80%;
+	max-width: 900px;
+	margin: auto;
+	padding: 0;		
+	align-items: center;
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	font-size: min(max(16px, 2.2vw), 20px);
+}
+	/*Spec. hur de individuella listobjekten/menyrubrikerna ska förhålla sig till varandra.*/
+.mainmenu li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+	/*Spec. hur länkarna ska se ut och fungera, ex. förändrat utseende vid hover. */
+.mainmenu a {
+	display: flex;
+	text-decoration: none;
+	padding: 10px 10px;
+	color: #fff;
+}
+.mainmenu a:hover {
+   color: #ffbd59;
+   text-decoration-line: underline;
+}
+	/*spec. att menyvalet "Kontakta oss" ska vara dolt när skärmvidden är 800px eller mer. Menyvalet syns istället i hjälpmenyn.*/
+
+ #m7 {
+	display: none;
+  }
+ 
+	/*spec. hur menyn ska se ut och bete sig när sidbredden understiger 800px.*/
+@media screen and (max-width: 800px) {
+  .mainmenu {
+    flex-direction: column;
+	flex-wrap: wrap;
+	margin: auto;
+	width: 100%;
+	max-height: 600px;
+  }
+   .mainmenu li {
+	padding: 10px;
+	width: 100%;
+	text-align: left;
+  }
+  
+  .mainmenu a:hover {
+   color: #ffbd59;
+   text-decoration-line: underline;
+}
+}
+	/*spec. menyvalens utseende.*/
+@media screen and (max-width: 800px) {
+	#m2 {
+	border: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+	#m3 {
+	background-color: #0372c1;
+	border-bottom: 2px solid #d7d7ff;
+	border-left: 2px solid #d7d7ff;
+	border-right: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+	#m4 {
+	background-color: #0372c1;
+	border-bottom: 2px solid #d7d7ff;
+	border-left: 2px solid #d7d7ff;
+	border-right: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+	#m5 {
+	background-color: #0372c1;
+	border-bottom: 2px solid #d7d7ff;
+	border-left: 2px solid #d7d7ff;
+	border-right: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+	#m6 {
+	background-color: #0372c1;
+	border-bottom: 2px solid #d7d7ff;
+	border-left: 2px solid #d7d7ff;
+	border-right: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+
+	/*spec. att menyval "Kontakta oss" ska vara synligt när skärmvidden understiger 800px, samt spec. att a ska fylla hela boxen så att den blir klickbar som de andra menyvalen. Detta pga att hjälpmenyn inte är synlig vid denna skärmvidd eller mindre men det menyvalet är såpass viktigt för användbarheten att den får vara i huvudmenyn istället.*/ 
+	#m7 {
+	display: inherit;
+	background-color: #0372c1;
+	border-bottom: 2px solid #d7d7ff;
+	border-left: 2px solid #d7d7ff;
+	border-right: 2px solid #d7d7ff;
+	border-radius: 5px;
+  }
+  
+	#m7 a {
+   width: 100%;
+}
+  
+	#m7 a:hover {
+   color: #ffbd59;
+   text-decoration-line: underline;
+}
+
+	#logo {
+	padding: 10px;
+  }
+
+}
+
+/*SLUT Huvudmeny*/
+
+	/*spec. att innehållet i main ska begränsas till samt centreras i ytan under menyn samt sidans rubrik.*/
+.mainwrapper {
+	width: 100%;
+	margin: auto;
+	float: left;
+}
+	/*spec. vad sidrubriksgruppen på startsidan ska ha för storlek, begränsningar i storlek samt padding och marginaler etc.*/
+.subheadgroupstart {
+	float: left;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	padding-top: 10px;
+	text-align: left;
+}
+	/*spec. vad h1 och p ska ha för storlek, färg etc samt att texten inte ska lägga sig på två rader.*/
+.subheadgroupstart h1{
+	padding-right: 10px;
+	font-weight: 500;
+	font-size: 1.8em;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.subheadgroupstart p{
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: 500;
+	white-space: nowrap;
+  }
+
+	/*spec. hur sidrubriksgruppen på förstasidan ska se ut och bete sig när sidbredden understiger 800px.*/
+@media screen and (max-width: 800px) {
+	.subheadgroupstart {
+	float: left;
+	width: 100%;
+	}
+	
+	.subheadgroupstart h1{
+	font-size: 4.24vw;
+	padding-right: 10px;
+	padding-top: 10px;
+	white-space: nowrap;
+  }
+  .subheadgroupstart p{
+	font-size: 3.25vw;
+	color: #fff;
+  }
+}
+
+	/*spec. hur sidrubriksgruppen för resten av webbplatsen ska se ut. Utseendet skiljer sig, behöver därför anpassa CCS:en för att den ska bete sig samt se korrekt ut. Den består av två delar (h1 och p)som ska visas bredvid varandra med en avskiljare emellan.*/
+.subheadgroup {
+	display: flex;
+	align-items: center;
+	float: left;
+	max-width: 750px;
+	margin: auto;
+	padding-top: 10px;
+}
+
+.subheadgroup h1{
+	padding-right: 10px;
+	border-right: 1px solid white;
+	font-weight: 500;
+	font-size: 1.8em;
+	color: #fff;
+	white-space: nowrap;
+}
+
+.subheadgroup p{
+	flex: 1;
+	padding-left: 10px;
+	font-family: "Italiana", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.2em;
+	color: #fff;
+	white-space: wrap;
+}
+
+/*spec. hur sidrubriksgruppen för resten av webbplatsen ska se ut.*/
+
+@media screen and (max-width: 800px) {
+  .subheadgroup {
+	display: flex;
+	align-items: center;
+	float: left;
+	margin: auto;
+	padding-top: 10px;
+	white-space: wrap;
+}
+  .subheadgroup h1{
+	padding-right: 10px;
+	border-right: 1.5px solid #fff;
+	font-size: 7vw;
+	font-weight: 500;
+	color: #fff;
+  }
+  .subheadgroup p{
+	font-size: 3.5vw;
+	color: #fff;
+  }
+}
+/*spec. hur ingressen ska visas, storlekar och färger samt hur länkar och p-text ska visas.*/
+.ingress {
+	float: left;
+	color: white;
+	font-size: 1em;
+	padding-bottom: 20px;
+	max-width: 750px;
+	margin: auto;
+}
+
+.ingress a{
+	color: #ffbd59;
+	font-size: 1em;
+}
+
+.ingresstart p{
+	font-weight: 700;
+	float: left;
+	color: white;
+	font-size: 1em;
+	padding-bottom: 20px;
+}
+
+/*spec. hur sidfoten ska visas som helhet samt enskilda delar. Den består av 2 kolumner, en höger och en vänster, som ska visas jämnt bredvid varandra,  med mellanrum i mitten och samma vidd som bodyn+header. Vänster kolumn har en bild som jag spec. max-vidd.*/
+
+.footercontainer {
+	width: 100%;
+	margin: auto;
+	text-align: left;
+	font-size: 0.65em;
+}
+
+.footergrid {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 25px;
+	border-top: 1px solid black;
+}
+
+.footerleft {
+	flex: 1 1 auto;
+	max-width: 400px;
+	padding-right: 10px;
+
+}
+
+.footerright {
+	flex: 1 1 auto;
+	max-width: 400px;
+	padding-left: 10px;
+}
+
+#logofooter {
+	max-width: 150px;
+}
+
+	/*SLUT global/hela webbplatsen*/
+
+/*START sidspecifikt*/
+
+	/*START Index/Hem*/
+/*spec. hur huvudinnehållets container ska se ut/bete sig.*/
+.linkscontainter {
+	width: 100%;
+	margin: auto;
+	max-width: 800px;
+	padding-bottom: 20px;
+	float: left;
+}
+/*spec. att div:beskr ska vara fäst i botten av img, storlekar för img, att div:beskr ska ha en vänsterborder samt att länkarna ska få underline när anv. hovrar över. */
+.gallerylinks {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+
+	
+}
+
+.linkimg {
+	width: 100%;
+	height: auto;
+	padding-top: 20px;
+}
+
+.beskr {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	padding: 20px;
+
+}
+
+.beskr a{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	padding: 20px;
+	border-left: 5px solid #ffbd59;
+	background-color: #fff;
+	text-decoration-line: none;
+	font-weight: bold;
+	color: #000;
+}
+
+.beskr a:hover{
+	text-decoration-line: underline;
+	color: #000;
+}
+	/*SLUT Index/Hem*/
+	
+	/*START Föreställningar*/
+/*spec. att bild, text och länkar ska visas på vit platta med border-left. Första plattan ska visas i fullbred, nästa två i bredd. Sista delen tre i rad på två rader. Första halvan av sidan visar aktuella föreställningar, andra delen, tidigare föreställningar.*/
+
+.forestmain {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	margin: auto;
+	max-width: 800px;
+	padding-bottom: 20px;
+}
+/*första plattan*/
+.forestmaincont {
+	flex: 1;
+	padding: 25px;
+	text-decoration-line: none;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+.forestmaincont h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.forestmaincont p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+/*spec. att länken ska ändra färg när anv. hovrar över den.*/
+
+.forestmaincont a:hover{
+	text-decoration-line: underline;
+	background-color: #4094d0;
+}
+
+/*andra plattan, två plattor i bredd. Anv samma kod till att visa tidigare föreställningar, tre i bredd.*/
+.forestmain2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 10px;
+	margin: auto;
+	max-width: 800px;
+	padding-bottom: 25px;
+
+	
+}
+
+.forest {
+	flex: 1;
+	padding: 25px;
+	text-decoration-line: none;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+.forest h2{
+
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.forest p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+.forest a:hover{
+	text-decoration-line: underline;
+	background-color: #4094d0;
+}
+
+.forest2 {
+	flex: 1;
+	padding: 25px;
+	text-decoration-line: none;
+	border-left: 5px solid #0372c1;
+	font-weight: bold;
+	color: #000;
+	background-color: #fff;
+}
+
+.forest2 h2{
+
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.forest2 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+.forest2 a:hover{
+	text-decoration-line: underline;
+	background-color: #4094d0;
+}
+
+/*gör så att länkarna visas som knappar.*/
+.forestinfo {
+	text-decoration-line: none;
+	background-color: #0372c1;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+
+}
+/*spec hur bilderna ska visas.*/
+.forestimg {
+	max-width:100%;
+	height: auto;
+	padding-bottom: 15px;
+}
+
+/*spec. färg och storlek på ingressen som hör till rubriken Tidigare föreställningar.*/
+.ingresstidigare {
+	color: #000;
+	font-size: 0.9em;
+}
+/*Spec. utseende, storlek, färg samt linje under rubriken. Valde att koda den som id då jag länkar till rubriken från andra ställen på webbplatsen.*/
+#tidigareforest {
+	padding-top: 25px;
+	font-size: 1.5em;
+	color: #000;
+	border-bottom: 1px solid black;
+}
+/*Spec. utseende, beteende för samtliga berörda delar när sidbredden understiger 800px.*/
+@media screen and (max-width: 800px) {
+
+ .forestmain2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	text-align: left;
+	padding-bottom: 25px;
+  }
+
+#tidigareforest {
+	border-bottom: 1px solid white;
+	padding-top: 25px;
+	font-size: 1.5em;
+	text-align: left;
+	color: #fff;
+
+}
+
+.ingresstidigare {
+	color: #fff;
+}
+
+.ingresstidigare a{
+	color: #ffbd59;
+}
+}
+
+	/*SLUT Föreställningar*/
+	
+	/*START Biljetter*/
+/*huvudinnehållets utseende osv de två plattorna ska visas i fullbred och bildernas storlek följa med vid förändrad sidbredd.*/
+.biljmain {
+	display: block;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+/*de två första plattornas utseende.*/
+.biljcont {
+	padding: 25px;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	background-color: #fff;
+}
+/*den tredje plattans utseende.*/
+.biljcont2 {
+	padding: 25px;
+	border-left: 5px solid #0372c1;
+	font-weight: bold;
+	background-color: #fff;
+}
+/*spec. för rubriker samt p-text för samtliga plattor.*/
+.biljcont h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.biljcont h3{
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+}
+
+.biljcont p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.biljcont2 h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+.biljcont2 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.biljcont2 h3{
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+}
+
+/*gör så att länkarna visas som knappar.*/
+
+.biljinfo {
+	text-decoration-line: none;
+	background-color: #0372c1;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+
+}
+
+/*gör så att länkarna ändrar färg samt får underline vid hover.*/
+.biljinfo:hover{
+	text-decoration-line: underline;
+	background-color: #4094d0;
+}
+
+/*spec hur bilderna ska visas.*/
+.biljimg {
+	width: 100%;
+	height: auto;
+	max-width: 800px;
+	
+}
+	/*SLUT Biljetter*/
+	
+	/*START Ditt besök*/
+/*huvudinnehållets utseende; består av två block med två kolumner som vid förändrad sidbredd ner till 800px ska ta upp jämnt utrymme på raden. */
+.besokmain {
+	display: flex;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.besokcont {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.besokcont a{
+	font-weight: normal;
+}
+
+.besokcont h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.besokcont h3{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+	text-decoration-line: none;
+}
+
+.besokcont p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+/*ändrad färg på border-left.*/
+.besokcont2 {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #0372c1;
+	background-color: #fff;
+}
+
+.besokcont2l {
+	flex: 1;
+	padding: 25px;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.besokcont2 h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.besokcont2 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.besokcont2 h3{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+}
+
+.besokcont2l h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.besokcont2l p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.besokcont2l h3{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+}
+
+/*specifikationer för plattan för inbäddad googlekarta.*/
+.besokcontmap {
+	flex: 1;
+	padding: 25px;
+	border-left: 0px;
+	font-weight: bold;
+	background-color: #fff;
+}
+/*spec. padding för inbäddad googlekarta.*/
+.besokcontmap iframe{
+	padding: 10px;
+}
+/*spec. utseende/beteende för delarna när sidbredden under stiger 800px. De två plattorna ska lägga sig i en column istället för två.*/
+@media screen and (max-width: 800px) {
+.besokmain {
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.besokcont {
+	margin: auto;
+	width: 100%;
+}
+/*spec. padding-top:0 på rubriken för att minska utrymmet/balansera utseendet när delarna lägger dig i en column. Spec. också att plattan ska få en border-left när plattorna lägger sig i en column.*/
+.besokcontmap {
+	margin: auto;
+	width: 100%;
+	border-left: 5px solid #ffbd59;
+	padding-top:0;
+}
+.besokcontmap iframe{
+	padding: 0 10px;
+	width: 100%;
+}
+.besokcont2 {
+	flex: 1;
+	border-left: 5px solid #0372c1;
+	font-weight: bold;
+	background-color: #fff;
+	padding-bottom: 0px;
+}
+.besokcont2l {
+	padding-top: 0px;
+	margin: auto;
+	width: 100%;
+	border-left: 5px solid #0372c1;
+}	
+/*spec. padding-top:0 på rubriken för att minska utrymmet/balansera utseendet när delarna lägger dig i en column.*/
+.besokcont2l h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+}
+	/*SLUT Ditt besök*/
+	
+	/*START Om oss*/
+/*huvudinnehållets utseende; består av tre block, första med två kolumner som vid förändrad sidbredd ner till 800px ska ta upp jämnt utrymme på raden.*/
+.ommain {
+	display: flex;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.omcont {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.omcont a{
+	font-weight: normal;
+}
+
+.omcont h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.omcont h3{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+}
+
+.omcont p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.omcontimg {
+	flex: 1;
+	border-left: 0px;
+	background-color: #fff;
+}
+
+.omcontimg img{
+	padding: 25px;
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+}
+
+/*huvudinnehållets utseende; består av tre block, andra blocket med vid förändrad sidbredd ner till 800px ska ta upp jämnt utrymme på raden. Spec. utseende, knapplänkar, list-egenskaper för styrelseförteckningen.*/
+
+.omcont2 {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #ffbd59;
+	background-color: #fff;
+}
+
+.omcont2 a{
+	font-weight: normal;
+}
+
+.omcont2 h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.omcont2 h3{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 0.8em;
+	background-color: #fff;
+	text-decoration-line: none;
+}
+
+.omcont2 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+.omcont2styrelse {
+	padding: 0 10px 10px 0;
+}
+.omcont2styrelse ul{
+	max-width: 80%;
+}
+.omcont2styrelse li{
+	line-height: 2.5;
+}
+
+.omcont2styrelse p{
+	border-bottom: 1px solid #0372c1;
+	font-size: 0.8em;
+}
+/*spec. utseende knapplänkar*/
+.styrelsemail {
+	text-decoration-line: none;
+	background-color: #0372c1;
+	border: none;
+	color: white;
+	padding: 2px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+	font-size: 0.8em;
+	margin: auto;
+	cursor: pointer;
+}
+/*gör så att länkarna ändrar färg samt får underline vid hover.*/
+.styrelsemail:hover{
+	text-decoration-line: underline;
+	background-color: #4094d0;
+}
+
+/*huvudinnehållets utseende; består av tre block, tredje blocket med bildplatta med border-left som sitter direkt over textplatta m. border left.*/
+.ommain3 {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+
+}
+
+.omcont3l {
+	flex: 1;
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	border-left: 5px solid #0372c1;
+}
+
+.omcont3 {
+	flex: 1;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	background-color: #fff;
+	border-left: 5px solid #0372c1;
+}
+
+.omcont3 h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	
+}
+
+.omcont3 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+/*Specifikationer för imgblock+img.*/
+.omcontimg3 {
+	height: 100%
+}
+
+.omcontimg3 img{
+	padding: 0px;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+.omcont4 {
+	flex: 1;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	padding: 25px;
+	background-color: #fff;
+	border-left: 5px solid #0372c1;
+}
+
+.omcont4 h2{
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	
+}
+
+.omcont4 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.omcont4 ul{
+	list-style: disc;
+}
+
+
+/*spec. utseende/beteende för delarna när sidbredden under stiger 800px. Delarna ska anpassas efter sidbredden, ex. knapparna på styrelseförteckningen.*/
+
+@media all and (max-width: 800px) {
+.ommain {
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.omcont {
+	margin: auto;
+	width: 100%;
+	
+}
+.omcontimg {
+	width: 100%;
+	border-left: 5px solid #ffbd59;
+}
+
+.omcontimg img{
+	width: 100%;
+}
+
+.omcont2r {
+	margin: auto;
+	width: 100%;
+	border-left: 5px solid #ffbd59;
+}
+.omcont3 {
+	flex: 1;
+	margin: auto;
+	padding: 25px;
+	background-color: #fff;
+}
+
+.omcont3 h2{
+	font-weight: 700;
+	font-size: 1em;
+	
+}
+
+.omcont3 p{
+	background-color: #fff;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.omcont3l {
+	flex: 1;
+}
+
+.omcontimg3 {
+	flex: 1;
+	width: 100%;
+}
+
+.omcontimg3 img{
+	padding: 0px;
+	max-width: 800px;
+	width: 100%;
+	height: auto;
+}
+
+.omcont2styrelse ul{
+	max-width: 100%;
+	margin-left: 0;
+	padding: 0px;
+}
+
+}
+	
+	/*SLUT Om oss*/
+	/*START Kontakta oss*/
+/*huvudinnehållets utseende; första blocket med två kolumner som vid förändrad sidbredd ner till 800px ska ta upp jämnt utrymme på raden.*/
+.kontaktmain {
+	display: flex;
+	max-width: 800px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.kontaktcont {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #ffbd59;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.kontaktcontr {
+	flex: 1;
+	padding: 25px;
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.kontaktcontr h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.kontaktcontr a{
+	font-weight: normal;
+}
+
+.kontaktcontr p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+.kontaktcont a{
+	font-weight: normal;
+}
+
+.kontaktcont h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+/*huvudinnehållets utseende; bild som dekoration på andra blocket. Ställer in utseende, att blocket inte ska ha något utrymme till nästa block samt ha vit bakgrund.*/
+
+.kontaktcontimg {
+	width: 100%;
+	height: auto;
+	max-width: 800px;
+	background-color: #fff;
+	border-left: 5px solid #0372c1;
+}
+
+.kontaktimg {
+	width: 100%;
+	height: auto;
+	max-width: 800px;
+}
+	
+.kontaktcont p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+/*huvudinnehållets utseende; andra blocket. Ställer in utseende för plattan, rubriker, p-text */
+
+.kontaktcont2 {
+	flex: 1;
+	padding: 25px;
+	border-left: 5px solid #0372c1;
+	background-color: #fff;
+}
+
+.kontaktcont2 h2{
+	padding-top: 15px;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+.kontaktcont2 p{
+	background-color: #fff;
+	color: #000;
+	font-size: 0.75em;
+	font-weight: normal;
+}
+
+/*spec. utseende/beteende för delarna när sidbredden under stiger 800px. Delarna ska anpassas efter sidbredden, kolumnen till höger ska få en border-left när plattorna lägger sig i en column.*/
+
+@media all and (max-width: 800px) {
+	.kontaktmain {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.kontaktcont {
+		flex:1;
+		background-color: #fff;
+		padding-bottom: 0;
+	}
+
+	.kontaktcontr {
+		flex:1;
+		background-color: #fff;
+		border-left: 5px solid #ffbd59;
+		padding-top: 0;
+	}
+
+	.kontaktcont2 {
+		font-weight: bold;
+		background-color: #fff;
+		border-left: 5px solid #0372c1;
+	}
+
+}
+	/*SLUT Kontakta oss*/
+

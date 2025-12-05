@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- Sidhuvud samma på alla sidor.-->
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<!-- Gör sidan responsiv; instruktioner för hur webbläsaren ska hantera webbplatsens dimensioner etc.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Länkar till CSS-filen.-->
+		<link rel="stylesheet" type="text/css" href="vallby.css">
+		<!-- Länkar in Google-typsnitt som används på webbplatsen.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Om oss - Vallby Sommarnöje</title>
+	</head>
+	<body>
+		<header>
+		<!-- Hjälpmenyn.-->
+			<nav>
+				<ul class="topmenu">
+					<li><a href="kontakt.html">Kontakta oss</a></li>
+					<li><a href="dittbesok.html#tillganglighet">Tillgänglighet</a></li>
+				</ul>
+			
+			</nav>
+		<!-- Huvudmenyn. Använder ID för att kunna styra listobjekten/menyvalen särskilt i skärmvidd under 800px. Döljer id "m7" vid skärmvidd över 800px, vid denna skärmvidd finns detta menyalternativ i Hjälpmenyn/"topmenu".-->
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="index.html"><img id="logo" src="vallbysommarnoje_fg_moln.png" alt="Vallby Sommarnöjes logotyp"></a>
+					</li>
+					<li id="m2"><a href="index.html">Hem</a></li>
+					<li id="m3"><a href="forestallningar.html">Föreställningar</a></li>
+					<li id="m4"><a href="biljetter.html">Biljetter</a></li>
+					<li id="m5"><a href="dittbesok.html">Ditt besök</a></li>
+					<li id="m6"><a href="om.html">Om oss</a></li>
+					<li id="m7"><a href="kontakt.html">Kontakta oss</a></li>	
+				</ul>
+			</nav>
+		</header>
+<!-- Sidrubrik-grupp.-->		
+		<div class="subheadgroup">
+		<h1>Om oss</h1>
+		<p>En ny sommarscen för nöjesproduktioner.</p>
+		</div>
+<!-- Start huvudinnehåll.-->
+	<main class="mainwrapper">
+		<!-- Första blocket: Platta med två kolumner, ena med rubriker och p-text, den andra med img. Plattorna ska lägga sig i en kolumn vid sidbredd under 800px. Höger kolumn får border-left när kolumnerna staplas. Ska också anpassas efter sidbredd.-->
+			<div class="ommain">
+				<div class="omcont">
+					<h2>Om Vallby Sommarnöje</h2>
+						<p>Vallby Sommarnöje är ett nytt bolag med rötterna i Västerås. Vår ambition är att vara en ny sommartradition på den anrika folkparksteatern som ligger inne på Vallby Friluftsmuseum.</p>
+						<p>Under många år framöver vill vi erbjuda publiken högklassig underhållning i form av revyer, farser, lustspel, musikaler mm. Varje sommar ska minst en ny produktion ha premiär.</p>
+						<p>Följ gärna vårt arbete via sociala medier på <a href="https://www.facebook.com/vallbysommarnoje">Facebook</a> och <a href="https://www.instagram.com/vallby_sommarnoje/">Instagram.</a></p>
+				</div>
+				<div class="omcontimg">
+					<img src="omossens.png" alt="Fem tecknade figurer som  tittar åt olika håll.">
+				</div>			
+			</div>
+	<!-- Andra blocket: Platta med en kolumn med rubriker/text, samt onumrerad lista för att lista styrelsemedlemmar samt lägga in knapplänk med mailto:adress. Anpassas efter sidbredd.-->				
+			<div class="ommain">
+				<div class="omcont2">			
+					<h2>Styrelsen</h2>
+						<p>Vallby Sommarnöje leds av en styrelse som också producerar och/eller medverkar i produktionerna.</p>
+						<p><b>Styrelsen består av:</b></p>
+					<div class="omcont2styrelse">
+						<ul>
+							<li><p>Anna Andersson, ordförande <a class="styrelsemail" href="mailto:info@vallbysommarnoje.se">E-post</a></p></li>
+							<li><p>Maria Martinsson, sekreterare <a class="styrelsemail" href="mailto:info@vallbysommarnoje.se">E-post</a></p></li>
+							<li><p>Sven Svensson, kassör<a class="styrelsemail" href="mailto:info@vallbysommarnoje.se">E-post</a></p></li>
+							<li><p>Karl Karlsson, ledamot</p></li>
+							<li><p>Petra Petersson, ledamot</p></li>
+							
+						</ul>
+					</div>
+					<h3>Vill du engagera dig i vår verksamhet?</h3>
+						<p>Kontakta ordförande som berättar mer om hur du kan bidra.</p>
+					</div>
+				
+				</div>
+	
+			<!-- tredje blocket: Plattor i en kolumn, första bild med border, andra rubrik/text. Anpassas efter sidbredd.-->
+			<div class="ommain3">
+				<div class="omcont3l">
+					<div class="omcontimg3">
+						<img src="omossbyrakrat.jpg" alt="Fem personer i kostym sitter runt ett bord med lustiga uppsyner.">
+					</div>
+				</div>
+				<div class="omcont3">
+					<h2>Historik</h2>
+						<p>År 2019 hade Vallby Sommarnöjes första produktion "Scensommarpärlor" premiär. Sedan dess har vi satt upp närmare tio	produktioner. På sidan <a href="forestallningar.html#tidigareforest">Föreställningar</a> kan du läsa mer om alla våra tidigare produktioner.</p>
+						<p>Vallby folkparksteater, portal och dansbana kommer ursprungligen från Tillberga, Hubbo. Teatern och portalen återinvigdes på museet 1971.</p>
+						<p>Läs mer om <a href="https://www.vallbyfriluftsmuseum.se/upptackvallbyfriluftsmuseum/husochgardar/folketsparkochteater.4.2e50256416a58d18ea963e44.html">Folkets park och teater (vallbyfriluftsmuseum.se)</a>.</p>
+				</div>	
+			</div>
+			<!-- Fjärde blocket: Platta med rubrik/text och lista. Anpassas efter sidbredd.-->
+			<div class="ommain">
+				<div class="omcont4">			
+					<h2>Samverkansparter</h2>
+						<p>För att göra våra produktioner möjliga samverkar vi med olika organisationer och aktörer. </p>
+						<p><b>Några av våra samverkansparter</b></p>
+						<ul>
+							<li><p>Västmanlands Teater</p></li>
+							<li><p>4:e teatern</p></li>
+							<li><p>Västerås stad</p></li>
+							<li><p>Region Västmanland</p></li>
+						</ul>
+					</div>
+				</div>
+	</main>
+	<!-- Slut huvudinnehåll.-->
+	<!-- Start sidfot - samma på alla sidor.-->	
+		<footer class="footercontainer">
+			
+			<div class="footergrid">
+			
+				<div class="footerleft">
+					<h4>Vallby Friluftsmuseum</h4>
+						<p>Vallby sommarnöje har ett väldigt nära samarbete med Vallby Friluftsmuseum, vilket vi är oerhört glada för.</p>
+						<p>Gå in på <a href="https://vallbyfriluftsmuseum.se/">Vallby Friluftsmuseums hemsida</a> och läs om all deras fantastiska verksamhet.</p>
+						<img id="logofooter" src="vallbyfm.png" alt="Vallby Friluftsmuseums logotyp" ></div>
+				<div class="footerright">
+					<h4>Kontakta oss</h4>
+						<h5>E-post:</h5>
+							<p><a href="mailto:info@vallbysommarnoje.se">info@vallbysommarnoje.se</a></p>
+						<p>➡ <a href="kontakt.html">Alla kontaktvägar</a></p>
+						<h5>Spelplats:</h5>
+							<p>Vallby folkparksteater<br>
+							Skerikesvägen 2, Västerås</p>
+							<a href="https://maps.app.goo.gl/v8W9YNGamuBxcxh16">Vägbeskrivning</a>
+						</div>
+			</div>
+		</footer>	
+
+	</body>	
+</html>

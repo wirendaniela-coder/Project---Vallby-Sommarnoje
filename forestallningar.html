@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Sidhuvud samma på alla sidor.-->
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<!-- Gör sidan responsiv; instruktioner för hur webbläsaren ska hantera webbplatsens dimensioner etc.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Länkar till CSS-filen.-->
+		<link rel="stylesheet" type="text/css" href="vallby.css">
+		<!-- Länkar in Google-typsnitt som används på webbplatsen.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Föreställningar - Vallby Sommarnöje</title>
+	</head>
+	<body>
+		<header>
+		<!-- Hjälpmenyn.-->
+			<nav>
+				<ul class="topmenu">
+					<li><a href="kontakt.html">Kontakta oss</a></li>
+					<li><a href="dittbesok.html#tillganglighet">Tillgänglighet</a></li>
+				</ul>
+			
+			</nav>
+		<!-- Huvudmenyn. Använder ID för att kunna styra listobjekten/menyvalen särskilt i skärmvidd under 800px. Döljer id "m7" vid skärmvidd över 800px, vid denna skärmvidd finns detta menyalternativ i Hjälpmenyn/"topmenu".-->
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="index.html"><img id="logo" src="vallbysommarnoje_fg_moln.png" alt="Vallby Sommarnöjes logotyp"></a>
+					</li>
+					<li id="m2"><a href="index.html">Hem</a></li>
+					<li id="m3"><a href="forestallningar.html">Föreställningar</a></li>
+					<li id="m4"><a href="biljetter.html">Biljetter</a></li>
+					<li id="m5"><a href="dittbesok.html">Ditt besök</a></li>
+					<li id="m6"><a href="om.html">Om oss</a></li>
+					<li id="m7"><a href="kontakt.html">Kontakta oss</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<!-- Sidrubrik-grupp.-->
+		<div class="subheadgroup">
+			<h1>Föreställningar</h1>
+			<p>Aktuella & tidigare produktioner.</p>
+		</div>
+		<!-- Sidingress.-->
+		<div class="ingress">	
+			<p> Här ser du information om alla våra föreställningar. Läs mer om våra tidigare produktioner <a href="forestallningar.html#tidigareforest">här.</a></p>
+		</div>
+	<!-- Start huvudinnehåll.-->	
+	<main class="mainwrapper">
+	<!-- Plattor med bild, border left, beskrivande text samt två knapplänkar. Vid sidbredd under 800px ska blocken lägga sig i en kolumn. -->	
+		<div class="forestmain">
+		<!-- Ett block i bredd -->	
+			<div class="forestmaincont">
+				<img class="forestimg" src="smklippt.jpg" alt="Sex karaktärer i 70-talskläder ser in i kameran" >
+				<h2>Klippt & Skuren</h2>
+					<p> En interaktiv deckarkomedi i två akter. Denna unika föreställning utspelar sig i en frisersalong och är proppfull med improviserad spontan humor. Under spelets gång begås ett mord och publiken får hitta ledtrådarna, förhöra de misstänkta och lösa det roligaste mysteriet i årets brott.</p>
+					<a href="#" class="forestinfo"> Läs mer</a>
+					<a href="#" class="forestinfo"> Biljetter</a>
+			</div>
+		</div>
+	<!-- Två block i bredd -->
+		<div class="forestmain2">
+				<div class="forest">
+					<img class="forestimg" src="bastfore.jpg" alt="En äldre man med flera par glasögon på huvudet ser in i kameran med tokig blick.">
+					<h2>Bäst Före?!</h2>
+						<p>En monolog om att bli äldre och hur fort åren går. På ett träffsäkert och varmt sätt tar Sören Ivemyr upp symptom och fördomar kring åldrandet - glömska, krämpor, äktenskap, familj, plastikoperationer, motionshysteri, festande, vinprovning, matvanor med mera.</p>
+						<a href="#" class="forestinfo"> Läs mer</a>
+						<a href="#" class="forestinfo"> Biljetter</a>
+				</div>
+				<div class="forest">
+					<img class="forestimg" src="teatersport.jpg" alt="En poster med texten Teatersport i stor text">
+					<h2>Teatersport</h2>
+						<p>Impro! Tävling! Derby! Humor! Galet! Det är ingredienser när Vallby Sommarnöje drabbar samman med Västerås Improvisationsteater på Vallby Friluftsmuseums folkparksteaterscen i en rafflande Teatersportmatch! Kom och upplev något, som du aldrig kommer att kunna se igen.</p>
+						<a href="#" class="forestinfo"> Läs mer</a>
+						<a href="#" class="forestinfo"> Biljetter</a>
+				</div>
+			</div>
+			
+	<!-- Tre block i bredd på två rader, en knapplänk. Dessa länkar till organisationens nuvarande webbplats. -->
+	<h2 id="tidigareforest">Tidigare föreställningar</h2>
+			<p class="ingresstidigare">Läs mer om våra tidigare produktioner nedan. Saknar du någon information? <a href="kontakt.html"> Kontakta oss</a> så hjälper vi dig.</p>
+		<div class="forestmain2">
+				<div class="forest2">
+					<img class="forestimg" src="fart.jpg" alt="Fem tecknade karaktärer vid en blå busshållplats, en buss har precis kört förbi och drar med sig karaktärerna i fartvinden.">
+					<h2>En Jäkla Fart - En scensommarrevy</h2>
+						<p><i>2024</i></p>
+						<p>En revy bestående av nyskrivna sketcher, sånger och monologer.</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/2024-en-j-kla-fart-en-scensommarrevy" class="forestinfo"> Läs mer</a>
+				</div>
+				<div class="forest2">
+					<img class="forestimg" src="nasse.png" alt="En tecknad gris med en stol fast på ryggen.">
+					<h2>Nasse hittar en stol</h2>
+						<p><i>2023</i></p>
+						<p>En mysig familjeföreställning om Nasse som hittar en stol, skriven av Sven Nordqvist.</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/nasse-hittar-en-stol" class="forestinfo"> Läs mer</a>
+				</div>
+				<div class="forest2">
+					<img class="forestimg" src="otroligt.jpg" alt="Tre personer ser in i kameran.">
+					<h2>Otroligt Het</h2>
+						<p><i>2023</i></p>
+						<p>En fartfylld fars där dårskap, missförstånd och en vas ställer till problem!</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/otroligt-het" class="forestinfo"> Läs mer</a>
+				</div>		
+			</div>
+		
+		<div class="forestmain2">
+				<div class="forest2">
+					<img class="forestimg" src="grona.jpg" alt="Fyra finklädda personer står i ett trapphus framför en hiss.">
+					<h2>Gröna Hissen</h2>
+						<p><i>2022</i></p>
+						<p>En galen komedi full av missförstånd och en förödande drink; ”Gröna hissen”. Skriven av Avery Hopwood.</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/2022-gr-na-hissen" class="forestinfo"> Läs mer</a>
+				</div>
+				<div class="forest2">
+					<img class="forestimg" src="loranga.png" alt="En affisch med tecknade figurer.">
+					<h2>Loranga, Loranga</h2>
+						<p><i>2022 & 2023</i></p>
+						<p>En absurd familjeföreställning skriven av Barbro Lindgren.</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/2022-loranga-loranga" class="forestinfo"> Läs mer</a>
+				</div>	
+				<div class="forest2">
+					<img class="forestimg" src="intebara.jpg" alt="Affisch för föreställningen föreställande fyra personer inklippta mot en blå himmel.">
+					<h2>Inte Bara Allsång</h2>
+					<p><i>2021</i></p>
+						<p>En spännande mix av klassiska allsångslåtar och tokroliga revynummer.</p>
+						<a href="https://vallbysommarnoje.se/tidigare-produktioner/inte-bara-alls-ng-2021" class="forestinfo"> Läs mer</a>
+				</div>	
+			</div>
+
+		</main>
+<!-- Slut huvudinnehåll.-->
+<!-- Start sidfot - samma på alla sidor.-->		
+		<footer class="footercontainer">
+			<div class="footergrid">
+				<div class="footerleft">
+					<h4>Vallby Friluftsmuseum</h4>
+						<p>Vallby sommarnöje har ett väldigt nära samarbete med Vallby Friluftsmuseum, vilket vi är oerhört glada för.</p>
+						<p>Gå in på <a href="https://vallbyfriluftsmuseum.se/">Vallby Friluftsmuseums hemsida</a> och läs om all deras fantastiska verksamhet.</p>
+						<img id="logofooter" src="vallbyfm.png" alt="Vallby Friluftsmuseums logotyp" ></div>
+				<div class="footerright">
+					<h4>Kontakta oss</h4>
+						<h5>E-post:</h5>
+							<p><a href="mailto:info@vallbysommarnoje.se">info@vallbysommarnoje.se</a></p>
+						<p>➡ <a href="kontakt.html">Alla kontaktvägar</a></p>
+						<h5>Spelplats:</h5>
+							<p>Vallby folkparksteater<br>
+							Skerikesvägen 2, Västerås</p>
+							<a href="https://maps.app.goo.gl/v8W9YNGamuBxcxh16">Vägbeskrivning</a>
+						</div>
+			</div>
+		</footer>	
+	</body>	
+</html>		

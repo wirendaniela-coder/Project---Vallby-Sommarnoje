@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Sidhuvud samma på alla sidor.-->
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<!-- Gör sidan responsiv; instruktioner för hur webbläsaren ska hantera webbplatsens dimensioner etc.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Länkar till CSS-filen.-->
+		<link rel="stylesheet" type="text/css" href="vallby.css">
+		<!-- Länkar in Google-typsnitt som används på webbplatsen.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Biljetter - Vallby Sommarnöje</title>
+	</head>
+	<body>
+		<header>
+		<!-- Hjälpmenyn.-->
+			<nav>
+				<ul class="topmenu">
+					<li><a href="kontakt.html">Kontakta oss</a></li>
+					<li><a href="dittbesok.html#tillganglighet">Tillgänglighet</a></li>
+				</ul>
+			
+			</nav>
+		<!-- Huvudmenyn. Använder ID för att kunna styra listobjekten/menyvalen särskilt i skärmvidd under 800px. Döljer id "m7" vid skärmvidd över 800px, vid denna skärmvidd finns detta menyalternativ i Hjälpmenyn/"topmenu".-->
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="index.html"><img id="logo" src="vallbysommarnoje_fg_moln.png" alt="Vallby Sommarnöjes logotyp"></a>
+					</li>
+					<li id="m2"><a href="index.html">Hem</a></li>
+					<li id="m3"><a href="forestallningar.html">Föreställningar</a></li>
+					<li id="m4"><a href="biljetter.html">Biljetter</a></li>
+					<li id="m5"><a href="dittbesok.html">Ditt besök</a></li>
+					<li id="m6"><a href="om.html">Om oss</a></li>
+					<li id="m7"><a href="kontakt.html">Kontakta oss</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<!-- Sidrubrik-grupp.-->
+		<div class="subheadgroup">
+			<h1>Biljetter</h1>
+			<p>Så köper du biljetter.</p>
+		</div>
+		<!-- Sidingress.-->
+		<div class="ingress">	
+			<p>Du kan köpa biljetter via webben eller på plats. Vi erbjuder också gruppbokningar. <a href="kontakt.html">Kontakta oss</a> vid intresse!</p>
+		</div>
+	<!-- Start huvudinnehåll.-->
+	<main class="mainwrapper">
+		<!-- Översta blocken: Plattor på en kolumn med border-left, dekorativ bild samt knapplänkar anpassade efter innehållet.-->
+			<div class="biljmain">
+				<div class="biljcont">
+					<img class="biljimg" src="bokaonline.jpg" alt="En person skannar en QR-kod med mobilen.">
+					<h2>Köp via webben</h2>
+						<p>Vi använder Nortic som leverantör för digitala biljetter. När du bokar via webben så får du en digital biljett som du kan skriva ut eller visa upp i mobilen för funktionärerna i entrén.</p>
+						<a href="https://www.nortic.se/ticket/organizer/760" class="biljinfo">Köp biljetter</a>
+				</div>
+			</div>
+			<div class="biljmain">
+				<div class="biljcont">
+					<img class="biljimg" src="biljetter2.jpg" alt="En skål med gröna biljetter.">
+					<h2>Köp på plats</h2>
+						<p>Förutom att boka via webben så kan du givetvis köpa din biljett på plats. Du kan betala via Swish eller kontant.
+						Vi öppnar en timme innan föreställningen börjar. Var gärna i god tid för att vara säkra din biljett.</p>
+						<a href="forestallningar.html" class="biljinfo"> Föreställningar</a>
+						<a href="kontakt.html" class="biljinfo"> Hitta hit</a>
+				</div>
+			</div>
+			<!-- Sista blocket: Platta med border-left samt rubriker och p-text.-->
+			<div class="biljmain">
+				<div class="biljcont2">
+					<h2>Biljettpriser</h2>
+						<p>Vi vill att så många som möjligt ska ha möjlighet att ta del av våra föreställningar och betala våra medverkande skäliga löner och erbjuda underhållning av hög kvalitet.</p>
+						<h3>Ordinarie</h3>
+						<p>360 kr</p>
+						<h3>Pensionär</h3>
+						<p>320 kr</p>
+						<h3>Barn (upp till 15 år)</h3>
+						<p>150 kr</p>
+						<h3>Gruppbokningar eller särskilda behov</h3>
+						<p>Är ni en grupp om fler än 8 deltagare? Eller behöver du t.ex. rullstolsanpassad plats? <a href="kontakt.html">Kontakta oss</a> så hjälper vi dig/er vidare.</p>
+				</div>
+			</div>
+	</main>
+<!-- Slut huvudinnehåll.-->
+<!-- Start sidfot - samma på alla sidor.-->
+		<footer class="footercontainer">
+			
+			<div class="footergrid">
+			
+				<div class="footerleft">
+					<h4>Vallby Friluftsmuseum</h4>
+						<p>Vallby sommarnöje har ett väldigt nära samarbete med Vallby Friluftsmuseum, vilket vi är oerhört glada för.</p>
+						<p>Gå in på <a href="https://vallbyfriluftsmuseum.se/">Vallby Friluftsmuseums hemsida</a> och läs om all deras fantastiska verksamhet.</p>
+						<img id="logofooter" src="vallbyfm.png" alt="Vallby Friluftsmuseums logotyp" ></div>
+				<div class="footerright">
+					<h4>Kontakta oss</h4>
+						<h5>E-post:</h5>
+							<p><a href="mailto:info@vallbysommarnoje.se">info@vallbysommarnoje.se</a></p>
+						<p>➡ <a href="kontakt.html">Alla kontaktvägar</a></p>
+						<h5>Spelplats:</h5>
+							<p>Vallby folkparksteater<br>
+							Skerikesvägen 2, Västerås</p>
+							<a href="https://maps.app.goo.gl/v8W9YNGamuBxcxh16">Vägbeskrivning</a>
+						</div>
+			</div>
+		</footer>	
+
+	</body>	
+</html>

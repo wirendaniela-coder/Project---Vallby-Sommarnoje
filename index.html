@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- Sidhuvud samma på alla sidor.-->
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<!-- Gör sidan responsiv; instruktioner för hur webbläsaren ska hantera webbplatsens dimensioner etc.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Länkar till CSS-filen.-->
+		<link rel="stylesheet" type="text/css" href="vallby.css">
+		<!-- Länkar in Google-typsnitt som används på webbplatsen.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Hem - Vallby Sommarnöje</title>
+	</head>
+	<body>
+		<header>
+		<!-- Hjälpmenyn.-->
+			<nav>
+				<ul class="topmenu">
+					<li><a href="kontakt.html">Kontakta oss</a></li>
+					<li><a href="dittbesok.html#tillganglighet">Tillgänglighet</a></li>
+				</ul>
+			
+			</nav>
+		<!-- Huvudmenyn. Använder ID för att kunna styra listobjekten/menyvalen särskilt i skärmvidd under 800px. Döljer id "m7" vid skärmvidd över 800px, vid denna skärmvidd finns detta menyalternativ i Hjälpmenyn/"topmenu".-->
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="index.html"><img id="logo" src="vallbysommarnoje_fg_moln.png" alt="Vallby Sommarnöjes logotyp"></a>
+					</li>
+					<li id="m2"><a href="index.html">Hem</a></li>
+					<li id="m3"><a href="forestallningar.html">Föreställningar</a></li>
+					<li id="m4"><a href="biljetter.html">Biljetter</a></li>
+					<li id="m5"><a href="dittbesok.html">Ditt besök</a></li>
+					<li id="m6"><a href="om.html">Om oss</a></li>
+					<li id="m7"><a href="kontakt.html">Kontakta oss</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<!-- Sidrubrik-grupp för startsidan.-->
+		<div class="subheadgroupstart">
+			<h1>Välkommen till Vallby Sommarnöje!</h1>
+			<p>Din sommarscen för högklassig scenunderhållning.</p>
+		</div>
+<!-- Start huvudinnehåll.-->
+	<main class="mainwrapper">
+		<!-- container för "gallerilänk-block"-->
+		<div class="linkscontainter">
+			<!--gallerilänkblock:
+			bilder med länkrad fixerad i bildens underkant.-->
+			<div class="gallerylinks">
+				<a href="forestallningar.html">
+					<img class="linkimg" src="bklippt.jpg" alt="Sex personer i 70-talskläder ser in i kameran." width="600" height="400"></a>
+				<div class="beskr">
+					<a href="forestallningar.html">Föreställningar</a>
+				</div>
+			</div>
+		<!--gallerilänkblock-->
+			<div class="gallerylinks">
+				<a href="biljetter.html">
+					<img class="linkimg" src="biljetter.jpg" alt="Biljetter i en skål." width="600" height="400"></a>
+				<div class="beskr"><a href="biljetter.html">Biljetter</a></div>
+			</div>
+		<!--gallerilänkblock-->
+			<div class="gallerylinks">
+				<a href="kontakt.html">
+					<img class="linkimg" src="lampor2.jpg" alt="Strålkastare som lyser mot en röd sammetsgardin." width="600" height="400"></a>
+				<div class="beskr">
+					<a href="kontakt.html">Kontakta oss</a></div>
+			</div>
+		<!--gallerilänkblock-->
+			<div class="gallerylinks">
+				<a href="dittbesok.html">
+					<img class="linkimg" src="besok.jpg" alt="En storslagen folkparksentré." width="600" height="400"></a>
+				<div class="beskr">
+					<a href="dittbesok.html">Ditt besök</a></div>
+				</div>
+			</div>
+
+</main>
+<!-- Slut huvudinnehåll.-->
+<!-- Start sidfot - samma på alla sidor.-->
+		<footer class="footercontainer">
+			
+			<div class="footergrid">
+			
+				<div class="footerleft">
+					<h4>Vallby Friluftsmuseum</h4>
+						<p>Vallby sommarnöje har ett väldigt nära samarbete med Vallby Friluftsmuseum, vilket vi är oerhört glada för.</p>
+						<p>Gå in på <a href="https://vallbyfriluftsmuseum.se/">Vallby Friluftsmuseums hemsida</a> och läs om all deras fantastiska verksamhet.</p>
+						<img id="logofooter" src="vallbyfm.png" alt="Vallby Friluftsmuseums logotyp" ></div>
+				<div class="footerright">
+					<h4>Kontakta oss</h4>
+						<h5>E-post:</h5>
+							<p><a href="mailto:info@vallbysommarnoje.se">info@vallbysommarnoje.se</a></p>
+						<p>➡ <a href="kontakt.html">Alla kontaktvägar</a></p>
+						<h5>Spelplats:</h5>
+							<p>Vallby folkparksteater<br>
+							Skerikesvägen 2, Västerås</p>
+							<a href="https://maps.app.goo.gl/v8W9YNGamuBxcxh16">Vägbeskrivning</a>
+						</div>
+			</div>
+		</footer>	
+
+	</body>	
+</html>

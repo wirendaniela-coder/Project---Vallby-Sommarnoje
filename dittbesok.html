@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Sidhuvud samma på alla sidor.-->
+<html lang="sv">
+	<head>
+		<meta charset="utf-8">
+		<!-- Gör sidan responsiv; instruktioner för hur webbläsaren ska hantera webbplatsens dimensioner etc.-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Länkar till CSS-filen.-->
+		<link rel="stylesheet" type="text/css" href="vallby.css">
+		<!-- Länkar in Google-typsnitt som används på webbplatsen.-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+		<title>Ditt besök - Vallby Sommarnöje</title>
+	</head>
+	<body>
+		<header>
+		<!-- Hjälpmenyn.-->
+			<nav>
+				<ul class="topmenu">
+					<li><a href="kontakt.html">Kontakta oss</a></li>
+					<li><a href="dittbesok.html#tillganglighet">Tillgänglighet</a></li>
+				</ul>
+			
+			</nav>
+		<!-- Huvudmenyn. Använder ID för att kunna styra listobjekten/menyvalen särskilt i skärmvidd under 800px. Döljer id "m7" vid skärmvidd över 800px, vid denna skärmvidd finns detta menyalternativ i Hjälpmenyn/"topmenu".-->
+			<nav>
+				<ul class="mainmenu">
+					<li><a href="index.html"><img id="logo" src="vallbysommarnoje_fg_moln.png" alt="Vallby Sommarnöjes logotyp"></a>
+					</li>
+					<li id="m2"><a href="index.html">Hem</a></li>
+					<li id="m3"><a href="forestallningar.html">Föreställningar</a></li>
+					<li id="m4"><a href="biljetter.html">Biljetter</a></li>
+					<li id="m5"><a href="dittbesok.html">Ditt besök</a></li>
+					<li id="m6"><a href="om.html">Om oss</a></li>
+					<li id="m7"><a href="kontakt.html">Kontakta oss</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<!-- Sidrubrik-grupp.-->
+		<div class="subheadgroup">
+		<h1>Ditt besök</h1>
+		<p>Allt du behöver veta inför ditt besök.</p>
+		</div>
+	<main class="mainwrapper">
+		<!-- Start huvudinnehåll.-->
+	<div class="besokmain">
+	<!-- Första blocket: Platta med två kolumner, ena med rubriker och p-text, den andra med inbäddad google-karta. Plattorna ska lägga sig i en kolumn vid sidbredd under 800px. Höger kolumn får border-left när kolumnerna staplas. Ska också anpassas efter sidbredd.-->
+				<div class="besokcont">
+					<h2>Hitta hit</h2>
+							<p>Vallby Friluftsteater</p>
+							<p>Skerikesvägen 2, Västerås</p>
+							<p><a href="https://maps.app.goo.gl/SDALqBcB9PQkG6Tt8">Karta</a></p>
+						<h3>Parkering</h3>
+						<p><b>Bil:</b> fyra timmars parkering finns framför teatern. Ta med p-skiva.</p>
+						<p><b>Cykel:</b> större cykelparkering finns i anslutning till bilparkeringen.</p>
+				</div>
+				<div class="besokcontmap">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2017.646741903799!2d16.515738000000006!3d59.622242000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465e615752121269%3A0x73155d198618270f!2sVallby%20Friluftsmuseum!5e0!3m2!1ssv!2sse!4v1746642416932!5m2!1ssv!2sse" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<!-- Andra blocket: Platta med två kolumner med rubriker och p-text. Plattorna ska lägga sig i en kolumn vid sidbredd under 800px. Höger kolumn får border-left när kolumnerna staplas. Ska också anpassas efter sidbredd.-->
+			<div class="besokmain">
+				<div class="besokcont2">
+					<h2 id="tillganglighet">Tillgänglighet</h2>
+						<p>För oss är det viktigt att alla ska kunna njuta av bra scenkonst, oavsett hur dina förutsättningar ser ut. På första raden finns platser reserverade för dig som använder rullstol eller permobil. <a href="kontakt.html">Kontakta oss</a> för att boka någon av dessa platser.</p>
+						<p>Fram till läktaren så är det grusväg. Om du behöver hjälp kan du meddela oss i förväg. Du kan också prata med någon av våra publikvärdar på plats som gärna hjälper till.</p>
+					<h2>Kläder efter väder</h2>
+						<p>Vallby Folkparksteaterscen är en utomhusscen med tak utan vindskydd. Klä dig efter väder för att få en så trevlig upplevelse som möjligt. Vi har ett begränsat antal filtar på plats. Ta kontakt med en publikvärd för att låna en filt.</p>
+				</div>
+				<div class="besokcont2l">
+					<h2>Fika</h2>
+						<p>Före föreställningen samt i pausen finns det möjlighet att köpa fika. Du kan betala med Swish och jämna kontanter.</p>
+					<h2>Publikvärdarna</h2>
+						<p>Behöver du hjälp innan eller under föreställningen? Våra publikvärdar finns på plats och är redo att guida dig rätt och se till att din teaterupplevelse blir så trevlig som möjligt.</p>
+					<h2>Fotografering</h2>
+						<p>Vi tycker om att bli omnämnda och att du som gäst vill dela med dig av din upplevelse hos oss. Tagga oss gärna i sociala medier på @vallbysommarnoje.</p>
+					<h2>Har du ytterligare frågor?</h2>
+						<p>Ta <a href="kontakt.html">kontakt med oss</a> så hjälper vi dig vidare!</p>
+				</div>
+			</div>
+
+	</main>
+<!-- Slut huvudinnehåll.-->
+<!-- Start sidfot - samma på alla sidor.-->	
+		<footer class="footercontainer">
+			
+			<div class="footergrid">
+			
+				<div class="footerleft">
+					<h4>Vallby Friluftsmuseum</h4>
+						<p>Vallby sommarnöje har ett väldigt nära samarbete med Vallby Friluftsmuseum, vilket vi är oerhört glada för.</p>
+						<p>Gå in på <a href="https://vallbyfriluftsmuseum.se/">Vallby Friluftsmuseums hemsida</a> och läs om all deras fantastiska verksamhet.</p>
+						<img id="logofooter" src="vallbyfm.png" alt="Vallby Friluftsmuseums logotyp" ></div>
+				<div class="footerright">
+					<h4>Kontakta oss</h4>
+						<h5>E-post:</h5>
+							<p><a href="mailto:info@vallbysommarnoje.se">info@vallbysommarnoje.se</a></p>
+						<p>➡ <a href="kontakt.html">Alla kontaktvägar</a></p>
+						<h5>Spelplats:</h5>
+							<p>Vallby folkparksteater<br>
+							Skerikesvägen 2, Västerås</p>
+							<a href="https://maps.app.goo.gl/v8W9YNGamuBxcxh16">Vägbeskrivning</a>y
+						</div>
+			</div>
+		</footer>		
+
+	</body>	
+</html>
